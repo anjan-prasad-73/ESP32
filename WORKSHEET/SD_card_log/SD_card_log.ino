@@ -21,11 +21,11 @@ void setup()
   pinMode(E_PIN,INPUT);
   SPI.begin(21,22,23,19);
   Serial.println("initializing SD card.....");
-  if(!SD.begin(SD_CS,SPI,4000000))
+  /*if(!SD.begin(SD_CS,SPI,4000000))
   {
     Serial.println("SD Initialization failed....");
     while(1);
-  }
+  }*/
   Serial.println("SD card initialized successfully ");
 
 
